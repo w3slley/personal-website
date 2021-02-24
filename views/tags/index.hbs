@@ -1,0 +1,8 @@
+<h1>All blogposts with the tag "{{label}}":</h1>
+{{#each posts}}
+<div class="post">
+	<a class="title" href="/posts/{{slug}}">{{title}}</a>
+  <p>{{dateToString date_created}}</p>
+</div>
+
+{{/each}}

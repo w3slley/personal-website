@@ -1,0 +1,14 @@
+<h1>Welcome!</h1>
+<p>On this page you can find thoughts and ideas related to software development, computer science, <a href="/physics">physics</a>, <a href="/writing">writing</a> and some updates on the <a href="/projects">projects</a> I worked or am working on.</p>
+{{#each posts}}
+<div class="post">
+	<a class="title" href="/posts/{{slug}}">{{title}}</a>
+  <p>{{dateToString date_created}}</p>
+
+	<div class="show-tags">
+		{{#each label}}
+			<small class="tags"><a href="/tags/{{label}}">{{label}}</a></small>
+		{{/each}}
+	</div>
+</div>
+{{/each}}

@@ -1,0 +1,108 @@
+@import '../main.css';
+
+.body{
+  width:100%;
+  position: relative;
+  padding: 0;
+  min-height: 100vh;
+}
+.create{
+  position: relative;
+  background-color: rgba(0,0,0,.1);
+  width: 100%;
+  height: 80vh;
+}
+
+.title, .create textarea{
+    width: 70%;
+    font-family: Quicksand;
+    font-size: 20px;
+    padding: 10px 0 10px 20px;
+    background-color: transparent;
+    border: none;
+}
+.title{
+  font-weight: bold;
+  height: 30px;
+  margin-bottom:10px;
+  font-size: 30px;
+}
+.create textarea{
+  resize: none;
+  outline: none;
+  height: 400px;
+
+}
+.create button{
+  position: relative;
+  margin: 10px auto;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.create-side-bar, .edit-side-bar{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+
+.tag{
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid gray;
+  transition: border-top-left-radius .1s, border-top-right-radius .1s;
+}
+.tag input{
+  left: 0;
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.tag a{
+  width: 20px;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.results ul{
+  padding: 0;
+  margin: 0;
+}
+
+.results li{
+  list-style-type: none;
+}
+
+.results li:hover{
+  background-color: rgba(0,0,0,.05);
+  cursor: pointer;
+}
+.show-tags{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+.tags{
+  background-color: #262626;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  width: auto;
+  border-radius: 5px;
+  cursor: default;
+}

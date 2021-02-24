@@ -1,0 +1,45 @@
+USER(
+    _ user_id _,
+    name,
+    username,
+    password,
+    role,
+    joined
+)
+
+POST(
+    _ post_id _,
+    title,
+    user_id,
+    content,
+    date,
+    tag,
+    comment_id,
+    view_count
+)
+
+TAG
+(
+   _ tag_id _,
+   label    
+)
+
+COMMENT_POST
+(
+    _ post_id _,
+    _ comment_id _
+)
+
+COMMENT(
+    _ comment_id _,
+    user,
+    content,
+    date
+)
+
+
+//relationships
+USER ---N--- <MAKES> ===M=== COMMENT
+USER ---N--- <CREATES> ===M=== POST
+POST ---N--- <HAS> ===M=== COMMENT
+POST ---N--- <TAGGED_BY> ===M=== TAG

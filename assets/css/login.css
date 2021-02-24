@@ -1,0 +1,39 @@
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+  padding: 30px;
+  width: 400px;
+  height: 250px;
+  background-color: rgba(25,25,25,1);
+  border-radius: 5px;
+}
+label{
+  color: white;
+}
+form input{
+  width: 100%;
+  padding: 5px 0;
+  margin: 5px 0;
+  font-size: 23px;
+  border: none;
+}
+form button{
+  background-color: #262626;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 28px;
+  color: white;
+  width: auto;
+  cursor: pointer;
+
+}
+form p{
+  text-align: center;
+}

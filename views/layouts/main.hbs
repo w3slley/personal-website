@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="{{css}}">
+    <link rel="shortcut icon" type="image/svg" href="/images/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="side-bar">
+      <li><a href="https://w3slley.github.io">Home</a></li>
+      <li><a href="/">Blog</a></li>
+      <li><a href="https://w3slley.github.io#contact">Contact</a></li>
+    </div>
+    <div class="navbar">
+      <a href="/"><img class="logo" src="/images/logo.svg" alt="logo"></a>
+      <img class="side-bar-icon" src="/images/menu.svg">
+      <ul>
+        {{#if userId}}
+          <li><a href="/dashboard">Dashboard</a></li>
+        {{/if}}
+        <li><a href="https://w3slley.github.io">Home</a></li>
+        <li><a href="/">Blog</a></li>
+        <li><a href="https://w3slley.github.io#contact">Contact</a></li>
+        {{#if userId}}
+        <li>
+          <form action="/user/logout" method="post">
+            <button class="logout-btn" type="submit">Logout</button>
+          </form>
+        </li>
+      {{/if}}
+      </ul>
+
+    </div>
+
+    <div class="body">
+      {{{body}}}
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/physics">My journey on physics</a></li>
+          <li><a href="/writing">Writing</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <a target="_blank" href="https://linkedin.com/in/weslleyvictor"><img src="/images/linkedin.png" alt="LinkedIn Page"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UChKfMu5nqzFLgLHa-R0a12A"><img src="/images/youtube.png" alt="Youtube Channel"></a>
+        <a target="_blank" href="https://github.com/w3slley"><img src="/images/github-image.png" alt="Github Profile"></a>
+        <a target="_blank" href="https://twitter.com/_w3slley"><img src="/images/twitter.png" alt="Twitter Page"></a>
+      </div>
+      <p>Created by <a style="color:white" target="_blank" href="https://w3slley.github.io">Weslley</a>. All rights reserved.</p>
+    </footer>
+    <!--MathJax script -->
+    <script>
+    //script that renders inline latex commands using MathJax
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    <!--PrismJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <script type="module" src="/js/main.js"></script>
+
+  </body>
+</html>

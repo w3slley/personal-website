@@ -1,0 +1,67 @@
+@import 'main.css';
+
+.dashboard-body{
+  padding: 30px;
+}
+.create-new-post{
+	margin: 5px;
+	padding: 10px;
+	text-decoration: none;
+	background-color: rgba(10,30,250,.8);
+	border-radius: 5px;
+	color: white;
+}
+.create-new-post:hover{
+	background-color: rgba(10,30,250,.7);
+}
+.manage-tags{
+	margin: 5px;
+	padding: 10px;
+	text-decoration: none;
+	background-color: rgba(100,30,150,.8);
+	border-radius: 5px;
+	color: white;
+}
+.dashboard-articles{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.dashboard-articles li{
+	position: relative;
+	width: 100%;
+	margin: 5px;
+	padding: 10px;
+	list-style-type: none;
+	border: 1px solid rgba(0,0,0,.4);
+  border-radius: 5px;
+}
+
+.dashboard-articles .edit-btn{
+	position: absolute;
+	top: 0;
+	right: 80px;
+}
+
+.dashboard-articles .delete-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.edit-btn, .delete-btn{
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	text-decoration: none;
+}
+.edit-btn{
+	background-color: green;
+
+}
+.delete-btn{
+	background-color: red;
+}

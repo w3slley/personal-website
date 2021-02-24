@@ -1,0 +1,8 @@
+<h1>On this page you can manage your tags!</h1>
+
+{{#each tags}}
+<div class="tag">
+  <p>{{label}} <a class="delete-btn" href="/tags/delete/{{tag_id}}">Delete</a></p>
+
+</div>
+{{/each}}

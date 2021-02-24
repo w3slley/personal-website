@@ -1,0 +1,187 @@
+body{
+	font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	padding: 0;
+	margin: 0;
+	transition: padding .5s;
+}
+.body{
+  margin: 0 auto;
+  width: 70%;
+	margin-bottom: 50px;
+}
+h1,h3,a{
+	color: #262626;
+}
+li{
+	list-style-type: circle;
+}
+.logo{
+	position: absolute;
+	top:0px;
+	left:30px;
+	width: 30px;
+}
+.navbar{
+	margin: 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 80px;
+}
+.navbar ul{
+	padding: 0;
+	margin: 20px 0;
+	text-align: right;
+}
+.navbar ul li{
+	display: inline;
+}
+.navbar ul li a{
+	margin: 20px;
+	font-size: 25px;
+	color: #262626;
+	text-decoration: none;
+}
+.navbar ul li a:hover{
+	text-decoration: underline 2px solid;
+}
+.side-bar{
+	display: none;
+}
+.side-bar-icon{
+	display: none;
+}
+.show-tags{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.tags{
+  background-color: #262626;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  width: auto;
+  border-radius: 5px;
+	cursor: pointer;
+}
+.tags:hover{
+	background-color: #555555;
+}
+.tags a{
+	text-decoration: none;
+	color: white;
+}
+/*Footer styling*/
+footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 0 5px 0;
+    background-color: #262626;
+		color: white;
+    height: auto;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+    font-size: 18px;
+}
+.footer-links ul{
+	list-style-type: none;
+	text-align: left;
+}
+.footer-links ul li{
+	display: inline;
+}
+.footer-links ul li a{
+	margin: 10px;
+	color: white;
+	text-decoration: none;
+}
+.footer-links ul li a:hover{
+	color: rgba(200,200,200,.5);
+}
+.social{
+	position: absolute;
+	display: flex;
+	right: 0;
+	top: 20px;
+}
+.social a {
+	margin: 10px;
+}
+.social img{
+	width: 40px;
+}
+
+@media screen and (max-width: 600px){
+	html{
+		overflow-x: hidden;
+	}
+	.body{
+		margin: 0 auto;
+		width: 95% !important;
+	}
+	.navbar{
+		margin-bottom: 10px;
+	}
+	.navbar ul{
+		display:none;
+	}
+	.logo{
+		top: 15px;
+	}
+	.side-bar{
+		display: block;
+		position: absolute;
+		top: -150px;
+		width: 100%;
+		text-align: center;
+		background-color: #262626;
+		padding: 5px;
+		transition: top .5s;
+	}
+	.side-bar li{
+		list-style-type: none;
+		margin: 10px;
+	}
+	.side-bar li a{
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	.side-bar-icon{
+		display: block;
+		width: 60px;
+		position: absolute;
+		right: 10px;
+		top: 5px;
+		cursor: pointer;
+	}
+	.post .title{
+		font-size: 25px;
+	}
+	.post p{
+		font-size: 15px;
+	}
+	p{
+    font-size: 15px;
+  }
+  img{
+    margin: 0;
+    width: 100%;
+  }
+	.social{
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+		width: 90%;
+		justify-content: center;
+	}
+	.footer-links ul li{
+		display: block;
+		margin: 10px;
+	}
+
+}

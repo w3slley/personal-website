@@ -1,0 +1,19 @@
+<div class="dashboard-body">
+  <a class="create-new-post" href="/posts/create">Create new post</a>
+  <a class="manage-tags" href="/tags/manage/all">Manage tags</a>
+  <h1>Articles</h1>
+
+  {{#if posts}}
+  <ul class="dashboard-articles">
+    {{#each posts}}
+    	<li>
+      <small>{{dateToString date_created}}</small>
+  	  <a href="/posts/{{slug}}">{{title}}</a>
+      <small> ({{view_count}} views)</small>
+  	  <a class="edit-btn" href="/posts/edit/{{post_id}}">Edit</a>
+  	  <a class="delete-btn" href="/posts/delete/{{post_id}}">Delete</a>
+  	</li>
+    {{/each}}
+  </ul>
+  {{/if}}
+</div>

@@ -1,0 +1,33 @@
+<form class="create">
+  <input class="title" value="{{title}}" type="text"><br>
+  <textarea class="post-content">{{content}}</textarea><br>
+  <input type="hidden" class="postId" value="{{postId}}">
+  <div class="edit-side-bar">
+    <button class="create-btn" type="submit">Update</button>
+    <p>Add tag:</p>
+
+    <div class="tag">
+      <input type="text" class="tag-input">
+      <a href="#">+</a>
+      <div class="results"></div>
+    </div>
+
+    <div class="show-tags">
+      {{#each tags}}
+        <small class="tags">{{label}}</small>
+      {{/each}}
+    </div>
+  </div>
+</form>
+
+<!--
+<div class="show">
+  <h1 class="show-title">{{title}}</h1>
+  <div class="show-markdown">
+    {{{htmlContent}}}
+  </div>
+</div>
+
+
+<script src="https://cdn.rawgit.com/showdownjs/showdown/1.9.1/dist/showdown.min.js"></script> -->
+<script type="module" src="/js/postAction.js"></script>
